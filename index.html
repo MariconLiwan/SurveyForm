@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tribute Page</title>      
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+	<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Netflix Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    
+
+    
+
+      <div class="form-group">
+      <p>
+        What is your type of subscription?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select a plan</option>
+        <option value="challenges">Mobile</option>
+        <option value="projects">Basic</option>
+        <option value="community">Standard</option>
+        <option value="openSource">Premium</option>
+      </select>
+    </div>
+    
+    
+    <div class="form-group">
+      <p>
+        What is your favorite film genre?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select a genre</option>
+        <option value="challenges">Documentary</option>
+        <option value="projects">Drama</option>
+        <option value="community">Romance</option>
+        <option value="openSource">Horror/Thriller</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Where did you learn about us?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Social Media</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Billboard Ads</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Family/Friends</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Newspaper Ad</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Radio Ads</label
+      >
+ 
+ 
+    </div>
+  
+      <div class="form-group">
+      <p>In a scale of 5, would you recommend Netflix to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />5 - Will Strongly Recommend</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />4 - Will Recommend</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />3 - Neutral</label
+      >
+      
+       <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />2- Will Not Recommend</label
+      >
+      
+       <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />1 - Will Strongly Not Recommend</label
+      >
+
+    <div class="form-group">
+      <p>We will appreciate any comments or suggestions.</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+</form>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+</html>
